@@ -1,0 +1,16 @@
+<head>
+  <title>login-hang-test</title>
+</head>
+
+<body>
+	{{loginButtons}}
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  {{#if currentUser}}
+	  <input type="button" value="Click me to reload server" />
+	{{/if}}
+</template>
